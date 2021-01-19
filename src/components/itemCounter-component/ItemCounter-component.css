@@ -1,0 +1,55 @@
+*{
+  box-sizing: content-box;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.title {
+ text-align: center;
+  color: red;
+  margin-top: 15px;
+}
+
+.count {
+  position: relative;
+  width: 150px;
+  margin: 20px auto;
+}
+
+.count__input {
+  outline: none;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.count__btn {
+  background-color: transparent;
+  border: 0;
+  font-size: 18px;
+  color: darkcyan;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  outline: none;
+  font-weight: 500;
+}
+
+.count__btn--add {
+  right: -45px;
+}
+.count__btn--dec {
+  left: 0;
+  top: -2px;
+}
+
+.count__btn:active {
+  font-weight: 600;
+}
